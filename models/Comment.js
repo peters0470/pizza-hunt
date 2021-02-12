@@ -45,7 +45,7 @@ const CommentSchema = new Schema(
       default: Date.now,
       get: createdAtVal => dateFormat(createdAtVal)
     },
-    // use ReplySchema to validate data for a reply
+    
     replies: [ReplySchema]
   },
   {
